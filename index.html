@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Sequential activation: activate elements one after the other</title>
+	<meta name="description" content="a jQuery plugin to automatically activate elements, one after the other. Make running lights, blinking Christmas decorations, traffic lights - the possibilities are endless">
+	<meta name="keywords" content="jquery, plugin, activate elements, sequential, one by one">
+	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-add.css">
+	<link rel="stylesheet" href="css/sequential_activation.css">
+</head>
+
+<body>
+<div class="jumbotron">
+		<div class="container">			
+			<div class="row">
+				<div class="col-xs-12">					
+					<h1 id="toplights"><span>S</span><span>e</span><span>q</span><span>u</span><span>e</span><span>n</span><span>t</span><span>i</span><span>a</span>l <span>A</span><span>c</span><span>t</span><span>i</span><span>v</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span></h1>
+					<h2>a jQuery plugin to automatically activate elements, one after the other</h2>
+					<p>Make running lights, blinking Christmas decorations, traffic lights &mdash; the possibilities are endless.</p>
+					<p>
+						<a href="downloads/sequential_activation.zip" class="btn btn-primary btn-lg ">Download plugin (zip)</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<section class="copy">
+
+			<div class="row">
+				<div class="col-sm-8">
+					<p>Sometimes you need to automatically set elements active, one after the other</p>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages</a></li>
+					</ul>
+					<h2>Fun possibilities</h2>
+					<p>You can have fun with this by making running lights, or even create your own olde worlde computer interface:</p>
+					<div class="lights">
+						<ul id="lights">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<p>&nbsp;</p>
+						<ul id="lights2">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<p>&nbsp;</p>
+						<ul id="lights3">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-sm-4">
+					<ul id="traffic">
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 812 2095"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+   <g>
+    <path d="M407 345c94,0 170,-77 170,-171 0,-93 -76,-170 -170,-170 -94,0 -170,77 -170,170 0,94 76,171 170,171z"/>
+
+    <path d="M225 382c-121,0 -217,98 -217,221l0 522c0,101 148,101 148,0l0 -478 35 0 0 1308c0,135 198,131 198,0l0 -759 34 0 0 759c0,131 199,135 199,0l0 -1308 34 0 0 478c0,102 148,102 148,0l0 -519c0,-113 -88,-224 -220,-224l-359 0z"/>
+   </g>
+</svg>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="30px" height="30px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 821 1575"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <g id="Layer_x0020_1">
+  <path class="fil0" d="M372 255c34,-1 63,-14 86,-40 24,-25 35,-55 34,-90 -1,-34 -14,-63 -39,-88 -23,-23 -50,-35 -82,-35l-3 0c-1,0 -2,0 -3,0 -34,1 -63,15 -87,40 -23,26 -35,56 -35,90 0,35 13,64 39,88 25,25 55,37 90,35z"/>
+  <path class="fil0" d="M793 677l-183 -100 -150 -240c-29,-35 -64,-53 -107,-53 -28,0 -56,12 -83,37l-227 230c-6,8 -11,18 -13,30l-30 256 0 7c0,15 6,29 17,40 11,11 24,17 40,17 15,0 28,-6 38,-17 10,-11 16,-23 18,-37l24 -220 80 -80 -74 614 -130 290c-4,13 -6,25 -6,36 0,25 8,45 25,62 16,17 37,24 61,22 34,0 58,-16 74,-47l140 -313c0,-3 1,-6 3,-12 2,-6 5,-11 7,-15 2,-4 3,-9 3,-13l17 -150 143 493c16,40 43,59 83,57 23,0 42,-9 59,-25 16,-17 25,-38 25,-62 0,-2 -1,-5 -2,-8 -1,-4 -2,-6 -2,-9l-200 -683 24 -223 56 90c5,6 10,12 17,16l197 110c13,5 22,7 26,7 16,0 29,-6 41,-18 11,-13 16,-27 16,-42 0,-20 -9,-36 -27,-47z"/>
+ </g>
+</svg>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>The Goodies</h2>
+					<p>You can activate the plugin on as many elements on the page as you need, bar the processing limits of your viewer's computer, of course.</p>
+					<p>You can set the speed and how many times you want it  to loop till indefinite.
+					</p>
+					<p>If you only want the activation sequence to run once, you can opt to keep everything active. This is nice for e.g. wait animations. An example:</p>			
+					<div class="lights">
+						<ul id="lights4">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">				
+					<h2>How to use this plugin</h2>
+					<h3>1. Link the files you need</h3>
+					<p>Include the jQuery script at the bottom of your page, e.g. through a CDN:</p>
+					<p><code>	&lt;script src="//code.jquery.com/jquery-2.1.3.min.js"&gt;&lt;/script&gt;</code></p>
+					<p>Then include the minimized version of the script:</p>
+					<p><code>&lt;script src="[path to your script]/jquery.sequential_activation.min.js"&gt;&lt;/script&gt;</code></p>
+
+					<p>Change [path to your script] to where it resides, eg "js".</p>
+					<h3>2. Create your HTML markup</h3>
+					<p>This is very simple: create an element and style the element containing it. Like</p>
+					<pre>&lt;ul id="lights"&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+  #lights {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: black;
+  }
+  #lights li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    ...
+  }
+&lt;/style&gt;
+			</pre>
+					<h3>3. Call the plugin</h3>
+					<p>Then initialize the plugin, telling it in which element it needs to run:</p>
+					<pre>
+&lt;script&gt;
+  $(&lt;containing element here, e.g. "#lights"&gt;).sequentialActivation({
+    animationSpeed: 1000, 
+    elementToActivate: 'li', 
+    loop: 0, 
+    keepActive: false 
+  });
+
+  // a second container:
+  $(&lt;containing element here, e.g. "nav"&gt;).sequentialActivation({
+    animationSpeed: 1000, 
+    elementToActivate: 'div', 
+    loop: 3, 
+    keepActive: false 
+  });
+&lt;/script&gt;
+	</pre>
+		<h3>4. Putting it all together</h3>
+		<p>This is your basic page to get the plugin up and running:</p>
+		<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="css/mysequential_activation.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  ...
+    &lt;ul id="lights"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    ...
+    &lt;script src="//code.jquery.com/jquery-2.1.3.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/jquery.sequential_activation.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+        $('#lights').sequentialActivation();	
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+			<h2>Options</h2>
+			<p>If you don't specify options, like in the example above, the plugin will use its default settings: <br>
+			- animation speed: 300 <br>
+			- the element that needs to be activated: 'li' <br>
+			- loop: 0, thus indefinite <br>
+			- keep active: false. In the example of running
+			</p>
+			<p>These are the options:</p>
+			<h3>Speed</h3>
+			<p>in the usual thousands of seconds</p>
+			<code>animationSpeed: 300</code>
+			<h3>Elements that need to be activated</h3>
+			<p>This lists the elements in the container that will be activated one by one:</p>
+			<code>elementToActivate: 'li'</code>
+			<h3>Loop</h3>
+			<p>You can specify the number of times it needs to loop. '0' means indefinite</p>
+			<code>loop: 0</code>
+			<h3>Keep active</h3>
+			<p>The elements will remain activated if set to 'true'. This means that looping needs to be set to '1', as otherwise the script continues unnecessarily.</p>
+			<p><code>keepActive: false</code></p>
+			<p>&nbsp;</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row">
+				<div class="col-xs-12">
+					<p><a href="downloads/sequential_activation.zip" class="btn btn-primary btn-lg download">Download plugin (zip)</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div id="explain">
+				<p class="extra-padding">This jQuery plugin is part of my Playground - a collection of fun stuff I made in the past, from jQuery games and plugins to CSS animation tests.
+					<br>
+					<br><a href="http://rayhyde.nl/pf_js-en.php">Please drop in on the playground section of my portfolio site www.rayhyde.nl!</a></p>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.sequential-activation.js" type="text/javascript"></script>
+	<script>
+		$(".nav-pills").sequentialActivation({
+			animationSpeed: 1000, // how fast until the next element is activated
+			elementToActivate: 'li', // what element needs to be activated
+			loop: 0, // loop x number of times, 0 is indefinite 
+			keepActive: false // keep elements active, only use when loop = 1
+		});
+		$("#toplights").sequentialActivation({
+			animationSpeed: 300, 
+			elementToActivate: 'span', 
+			loop: 0, 
+			keepActive: false 
+		});
+		$("#lights").sequentialActivation({
+			animationSpeed: 300, 
+			elementToActivate: 'li', 
+			loop: 0, 
+			keepActive: false 
+		});
+		$("#lights2").sequentialActivation({
+			animationSpeed: 100, 
+			elementToActivate: 'li', 
+			loop: 0, 	
+			keepActive: false
+		});
+		$("#lights3").sequentialActivation({
+			animationSpeed: 200, 
+			elementToActivate: 'li', 
+			loop: 0, 	
+			keepActive: false
+		});
+		$("#lights4").sequentialActivation({
+			animationSpeed: 2000, 
+			elementToActivate: 'li', 
+			loop: 1, 	
+			keepActive: true
+		});
+		$("#traffic").sequentialActivation({
+			animationSpeed: 2000, 
+			elementToActivate: 'li', 
+			loop: 0, 	
+			keepActive: false
+		});
+	</script>
+
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-12332810-1");
+			pageTracker._trackPageview();
+		} catch (err) {}
+	</script>
+</body>
+
+</html>
