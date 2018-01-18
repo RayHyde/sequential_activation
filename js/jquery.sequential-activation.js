@@ -34,7 +34,6 @@
 				if (settings.keepActive == false ) {
 					$el.removeClass('active');
 				}
-				console.log('settings.loop: ' + settings.loop);
 				$el.eq(i).addClass('active');
 				i++;
 				if (i <= $el.length) {
@@ -57,7 +56,5 @@
 			activateIt(i);
 
 		});
-
-
 	}
 }(jQuery));
